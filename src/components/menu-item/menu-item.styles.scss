@@ -10,9 +10,7 @@
   overflow: hidden;
   &:hover {
     cursor: pointer;
-  
-    // This means, when we hover over menu-item, we want to scale the menu-item by 1.1 which means 1.1 size of the current menu-item
-    // and we say that this transform should happen through a transition over 6s and we use cubic-bezier which is a calculation to tell how the item should move and get // //// bigger over these 6 seconds. Transition allows us to make the transform smoother.
+    
     & .background-image {
       transform: scale(1.2);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
